@@ -8,7 +8,7 @@ main{
     header{
         width:100%; position:absolute; top:0; left:0; padding: 5vh 5vw; 
         display: flex; flex-wrap: wrap; justify-content: space-between;
-        align-items: center;
+        align-items: center; z-index: 2;
 
         .sns{
             display: flex;
@@ -71,6 +71,32 @@ aside{
         }
         span {
             font: 12px/1 'arial'; color: #fff; position: absolute; top: 50px; right: 50px; cursor: pointer; letter-spacing: 2.3;
+        }
+    }
+}
+
+@media screen and (max-width:999px){
+    main{
+        .text{
+            width:50vw;
+        }
+    }
+}
+@media screen and (max-width:699px){
+    main{
+        .text{
+            width:70vw;
+        }
+    }
+    aside{
+        width:80vw;
+        img{width: 50%;}
+        .inner{
+            padding:20px; text-align: center; margin:0 auto;
+            .pic{width:40%; text-align: center;
+                
+            }
+            .con{width:100%;}
         }
     }
 }

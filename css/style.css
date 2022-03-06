@@ -30,6 +30,7 @@ main header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 main header .sns {
   display: flex;
@@ -192,6 +193,36 @@ aside .inner span {
   right: 50px;
   cursor: pointer;
   letter-spacing: 2.3;
+}
+
+@media screen and (max-width: 999px) {
+  main .text {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 699px) {
+  main .text {
+    width: 70vw;
+  }
+
+  aside {
+    width: 80vw;
+  }
+  aside img {
+    width: 50%;
+  }
+  aside .inner {
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  aside .inner .pic {
+    width: 40%;
+    text-align: center;
+  }
+  aside .inner .con {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
