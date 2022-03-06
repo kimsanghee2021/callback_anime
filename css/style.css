@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -44,6 +45,38 @@ main header .sns a {
   align-items: center;
   color: #fff;
 }
+main .text {
+  width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 15vw;
+  transform: translateY(-70%);
+  transition: 1s;
+}
+main .woman {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transition: 1s;
+}
+main .btnOpen {
+  display: block;
+  width: 20vw;
+  min-width: 300px;
+  transition: 1s;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 30vh;
+  left: 15vw;
+  font: bold 14px/1 "arial";
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
 main footer {
   width: 100%;
   position: absolute;
@@ -66,6 +99,99 @@ main footer p {
   font: 12px/1 "arial";
   color: #aaa;
   letter-spacing: 2px;
+}
+main.off .text {
+  left: -20vw;
+  opacity: 0;
+}
+main.off .woman {
+  left: 100%;
+  opacity: 0;
+}
+main.off .btnOpen {
+  bottom: 0vh;
+  opacity: 0;
+}
+
+aside {
+  width: 60vw;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+aside .top {
+  width: 0%;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+aside .right {
+  width: 2px;
+  height: 0%;
+  background: #111;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+aside .bottom {
+  width: 0%;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+aside .left {
+  width: 2px;
+  height: 0%;
+  background: #111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+aside .inner {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+aside .inner .pic {
+  width: 30%;
+}
+aside .inner .con {
+  width: 65%;
+}
+aside .inner .con h2 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 3vw;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+aside .inner .con p {
+  font-size: 16px;
+  color: #666;
+}
+aside .inner span {
+  font: 12px/1 "arial";
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  letter-spacing: 2.3;
 }
 
 /*# sourceMappingURL=style.css.map */
